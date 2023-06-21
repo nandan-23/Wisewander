@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const tryNow = document.querySelector('#tryNowBtn');
 
   function clicked() {
-    window.location.href = 'https://www.youtube.com';
+    window.location.href = 'https://www.youtube.com/watch?v=y25k0SImB8Y';
   }
   
   tryNow.addEventListener('click', clicked);
