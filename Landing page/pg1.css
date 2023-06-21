@@ -12,7 +12,7 @@ body {
   left: 0;
   background-image: url('Runway1.jpg'); /* Set an initial background image */
   background-repeat: no-repeat;
-  transition: background-image 2s cubic-bezier(0.645, 0.045, 0.355, 1); /* Slow and smooth transition */
+  transition: background-image 4s cubic-bezier(0.645, 0.045, 0.355, 1); /* Slow and smooth transition */
 }
 
 #logo{
