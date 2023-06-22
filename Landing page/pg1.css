@@ -25,7 +25,7 @@ body {
 }
 
 #introduction {
-  font-size: 48px;
+  font-size: 55px;
   font-family: Orbitron;
   font-weight: 100;
   color: white;
@@ -48,7 +48,7 @@ body {
   border-radius: 15px;
   border: 2px solid white;
   width: 90%;
-  height: 65px;
+  height: 55px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -86,7 +86,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('Runway5.jpg'); 
+  background-image: url('Runway1.jpg'); 
   background-repeat: no-repeat;
   background-size: cover; /* Add this line */
 }
