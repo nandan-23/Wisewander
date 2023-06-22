@@ -1,29 +1,18 @@
+/* Common styles */
 body {
   margin: 0;
   padding: 0;
 }
 
-.background-image {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('Runway1.jpg'); /* Set an initial background image */
-  background-repeat: no-repeat;
-  transition: background-image 4s cubic-bezier(0.645, 0.045, 0.355, 1); /* Slow and smooth transition */
-}
-
-#logo{
+#logo {
   position: fixed;
   top: 3%;
   left: 3%;
 }
 
-#logoImg{
-  width: 12vw;
-  height: 8vh;
+#logoImg {
+  width: 80%;
+  height: 40%;
 }
 
 #heading {
@@ -40,7 +29,7 @@ body {
   font-family: Orbitron;
   font-weight: 100;
   color: white;
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #cont {
@@ -51,7 +40,6 @@ body {
   text-align: center;
   width: 90%;
 }
-
 
 .search-bar {
   display: flex;
@@ -66,18 +54,9 @@ body {
   box-sizing: border-box;
 }
 
-
-::placeholder {
-  color: white;
-  opacity: 1;
-  padding-left: 5%;
-  font-family: orbitron;
-  font-size: large;
-}
-
 .search-input {
-  padding-left: 2%; /* increase padding as needed */
-  width: 78%; /* increase width to move the button to the corner */
+  padding-left: 2%;
+  width: 78%;
   border: none;
   background: transparent;
   color: white;
@@ -93,13 +72,72 @@ body {
   border-radius: 0 25px 25px 0;
   font-size: 2em;
   line-height: 0.8;
-  padding: 2%; /* adjust padding as needed */
-  width: 20%; /* add width for button */
-  text-align: center; /* center the button text/icon */
+  padding: 2%;
+  width: 20%;
+  text-align: center;
   font-family: orbitron;
-  justify-content: flex-end; /* move the button to the extreme corner */
-  align-items: center; /* center the button vertically */
-  display: flex; /* needed for justify-content and align-items to work */
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('Runway1.jpg'); /* Set an initial background image */
+  background-repeat: no-repeat;
+   /* Slow and smooth transition */
 }
 
 
+::placeholder{
+  color: white;
+  opacity: 1;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .background-image {
+    position: fixed;
+  }
+
+
+  #logo {
+    top: 2%;
+    left: 2%;
+  }
+
+  #logoImg {
+    width: 60%;
+    height: 30%;
+  }
+
+  #heading {
+    top: 45%;
+  }
+
+  #introduction {
+    font-size: 36px;
+  }
+
+  #cont {
+    bottom: -120%;
+  }
+
+  .search-input {
+    padding-left: 2%;
+    width: 70%;
+  }
+
+  .search-button {
+    padding: 1.5%;
+    width: 25%;
+    font-size: 1.5em;
+  }
+}
