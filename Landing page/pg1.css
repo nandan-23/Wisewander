@@ -33,12 +33,11 @@ body {
 }
 
 #cont {
-  position: fixed;
-  bottom: -140%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  width: 100%;
   text-align: center;
-  width: 90%;
+  padding: 1em 0;
+  margin-top: 10%;
 }
 
 .search-bar {
@@ -82,15 +81,14 @@ body {
 }
 
 .background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('Runway5.jpg'); /* Set an initial background image */
+  background-image: url('Runway5.jpg'); 
   background-repeat: no-repeat;
-   /* Slow and smooth transition */
+  background-size: cover; /* Add this line */
 }
 
 
@@ -127,8 +125,14 @@ body {
   }
 
   #cont {
-    bottom: -120%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1em 0;
   }
+}
 
   .search-input {
     padding-left: 2%;
