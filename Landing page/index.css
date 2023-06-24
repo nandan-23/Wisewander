@@ -1,69 +1,67 @@
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 #myVideo {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+#contentWrapper {
+  position: fixed;
+  bottom: 20%;
+  left: 10%;
+  right: 10%; /* Add this to control the width of the contentWrapper */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Add this to place items at the end points */
+  align-items: center;
+}
 
-#btn {
-    position: fixed;
-    bottom: 20%;
-    left: 10%;
-
+#btn, #heading {
+  margin: 10px 0;
 }
 
 #tryNowBtn {
-    padding: 5px 5px;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-    border: 1px solid white;
-    cursor: pointer;
-    width: 150px;
-    transition: 0.5s;
-    font-family: Orbitron;
-
+  padding: 5px 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  width: 150px;
+  transition: 0.5s;
+  font-family: Orbitron;
 }
 
 #tryNowBtn:hover {
-    background-color: white;
-    opacity: 0.7;
-    color:black;
-    border: 1px solid white;
-    width: 152px;
-
+  background-color: white;
+  opacity: 0.7;
+  color:black;
+  border: 1px solid white;
+  width: 152px;
 }
 
-#heading{
-  position: fixed;
-  bottom: 20%;
-  right: 10%;
-}
-
-#introduction{
+#introduction {
   color: white;
   font-size: 40px;
   font-family: Orbitron;
   font-weight: 100;
 }
 
-#logo{
+#logo {
   position: fixed;
   top: 3%;
   left: 3%;
 }
 
-#logoImg{
+#logoImg {
   width: 80%;
   height: 40%;
 }
