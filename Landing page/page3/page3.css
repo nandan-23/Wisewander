@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#imgntxt {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+#imgntxt img {
+    width: 80vw;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 10px; /* Add this line to make the corners rounded */
+}
+
+#textbox {
+    width: 20vw;
+    height: 60vh;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    background-color: black;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 0 5vw;
+    border: 2px solid white;
+    color: gray;
+}
