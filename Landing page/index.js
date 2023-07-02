@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const tryNow = document.querySelector('#tryNowBtn');
 
   function clicked() {
-    window.location.href = './pg1.html';
+    window.location.href = './page3.html';
   }
   
   tryNow.addEventListener('click', clicked);
