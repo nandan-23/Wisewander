@@ -170,3 +170,44 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
+@media (max-width: 600px) {
+    #container {
+        width: 90%;
+    }
+
+    #imgntxt {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #imgntxt img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bottomone {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .container button {
+        width: 90%;
+    }
+
+    .container input[type="text"] {
+        width: 90%;
+    }
+
+    .buttonst {
+        width: 90%;
+    }
+
+    #time {
+        font-size: 20px;
+    }
+}
