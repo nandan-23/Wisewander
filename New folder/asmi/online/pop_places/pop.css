@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap');
+
+
+
+/* Global styles */
+body {
+    background-color: rgb(24, 23, 24);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 10px;;
+}
+
+/* Menu styles */
+/* Menu styles */
+/* Menu styles */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.641);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 2px 5px;
+    position: relative;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%; /* Set the left position to 50% to start from the middle */
+    transform: translateX(-50%); /* Move the line back by half of its width to start from the origin */
+    width: 0; /* Set the initial width to 0 */
+    height: 2px;
+    background-color: aquamarine;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease; /* Add a transition for both width and opacity */
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+.menu a:hover:before {
+    width: 100%; /* Set the width to 100% on hover to stretch outwards */
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: aquamarine; /* Change the text color on hover */
+}
+
+
+.logo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 21px;
+    margin-left: 10px;;
+}
+
+/* Social links styles */
+#yout {
+    color: aquamarine;
+    margin-right: 5px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+#insta {
+    margin-left: 140px;
+    margin-left: 2px;
+    color: aquamarine;
+    font-size: 20px;
+}
+
+/* Your existing CSS... */
+
+.places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin: 60px 60px;
+}
+
+.place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.place-name {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 40px;
+    flex-grow: 1;
+    margin-right: 30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.card {
+    flex-grow: 4;
+    margin: 20px 10px;
+    background-color: transparent; /* Just a placeholder, style it as you'd like */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width:100px;
+}
+
+#card1{
+    display: flex;
+    border-radius: 20px;
+    z-index: 0;
+
+    
+}
+
+#part1{
+    background-color: transparent;
+  
+    width: 100px;
+    z-index: 1;
+    margin=0px;
+    width:50%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    border-right: 2px solid rgb(222, 231, 230);
+    
+}
+
+#part2{
+    background-color: transparent;
+    width: 100px;
+    z=1;
+    margin=0px;
+    width:50%;
+    height:100%;
+    border-radius: 0px 20px 20px 0px;
+
+
+}
+
+#img1{
+    cover: cover;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 2;
+}
+
+#img2{
+    cover: fit;
+    border-radius: 0px 20px 20px 0px;
+}   
+
+/* Your existing CSS... */
+
+/* Add these styles to display "Bangkok Blues" in the correct place */
+/* Your existing CSS... */
+
+/* Add these styles to display "Bangkok Blues" in the correct place */
+/* Your existing CSS... */
+
+/* Add these styles to display "Bangkok Blues" in the correct place */
+#dishead {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    color: fcfdfc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 28px;
+    margin-right: 3px;
+    z-index: 3;
+    position: absolute;
+    top: 10%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-weight: 700;
+}
+
+#description {
+    font-family: 'Contra Condensed', sans-serif;
+    font-size: 12px;
+    color:fcfdfc;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-left: 42%;
+    margin-right: 3px;
+    z-index: 3;
+    position: absolute;
+    top: 32%;
+    left: 6%;
+    width: 90%; /* Set the description to occupy the full width */
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-weight: 400;
+}
+
+#explore{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color:white;
+    margin-bottom: 2px;
+    margin-left: 18%;
+    margin-right: 3px;
+    z-index: 3;
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+    width: 40%; /* Set the description to occupy the full width */
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-weight: 400;
+    height:30px;
+    border: 1px solid white;
+    background-color: transparent;
+    padding:2px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#explore:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+#dishead2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    color: rgb(40, 85, 80);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 28px;
+    margin-right: 3px;
+    z-index: 3;
+    position: absolute;
+    top: 10%;
+    right:1%;
+    transform: translate(-15%, -50%);
+    overflow: hidden;
+    font-weight: 700;
+}
+
+#description2 {
+    font-family: 'Contra Condensed', sans-serif;
+    font-size: 12px;
+    color:rgb(40, 85, 80);
+    margin-top: 11px;
+    margin-bottom: 10px;
+    margin-left: 42%;
+    margin-right: 3px;
+    z-index: 3;
+    position: absolute;
+    bottom: 32%;
+    left: 6%;
+    width: 90%; /* Set the description to occupy the full width */
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-weight: 400;
+}
+
+#explore2{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    color:rgb(40, 85, 80);
+    margin-bottom: 2px;
+    margin-right: 0px;
+    z-index: 3;
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    width: 40%; /* Set the description to occupy the full width */
+    transform: translate(-15%, -40%);
+    overflow: hidden;
+    font-weight: 400;
+    height:30px;
+    border: 1px solid rgb(40, 85, 80);
+    background-color: transparent;
+    padding:2px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#explore2:hover{
+    background-color:  rgb(40, 85, 80);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/* Add relative positioning to "part1" and "part2" containers */
+#part1,
+#part2 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add relative positioning to "card1" container */
+#card1 {
+    position: relative;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .place {
+        flex-direction: column;
+    }
+
+    .place-name {
+        writing-mode: horizontal-tb;
+        transform: rotate(0);
+    }
+}

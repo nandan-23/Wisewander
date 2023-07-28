@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
+/* Global styles */
+body {
+    background-color: rgb(24, 23, 24);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 10px;;
+}
+
+/* Menu styles */
+/* Menu styles */
+/* Menu styles */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.641);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 2px 5px;
+    position: relative;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%; /* Set the left position to 50% to start from the middle */
+    transform: translateX(-50%); /* Move the line back by half of its width to start from the origin */
+    width: 0; /* Set the initial width to 0 */
+    height: 2px;
+    background-color: aquamarine;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease; /* Add a transition for both width and opacity */
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+.menu a:hover:before {
+    width: 100%; /* Set the width to 100% on hover to stretch outwards */
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: aquamarine; /* Change the text color on hover */
+}
+
+
+.logo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 21px;
+    margin-left: 10px;;
+}
+
+/* Main container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
+    background-color: rgb(24, 23, 24);
+    padding: 0px;
+}
+
+/* Heading styles */
+.header-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-select h1 {
+    margin-right: 10px;
+    color:rgb(203, 253, 234);
+    font-size: 60px;
+    background-color: transparent;
+}
+
+/* Image container styles */
+#image-form-container {
+    background-color: rgba(245, 245, 245, 0);
+    padding: 0px;
+    margin: 0px auto;
+    width: 60vw;
+    height:55vh;
+    align-items: center;
+    border-radius: 15px;
+}
+
+/* Image styles */
+#destinationImage{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Inline form styles */
+/* Inline form styles */
+/* Rest of your CSS code */
+
+/* Inline form styles */
+
+.inline-form {
+    width: 59%;
+    margin: -20px auto 0; /* Negative margin-top for overlap */
+    z-index: 1; /* Ensure the form appears above the image */
+    background:rgb(34, 44, 40); /* Add a bit of transparency so the form doesn't fully cover the image */
+    padding: 10px;
+    border-radius: 15px; /* Make the corners of the form rounded */
+    color: white; /* Make the form text color white */
+    height:50px;
+}
+
+.inline-form form {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    border: 2px;
+    border-radius:10px;
+    background-color: transparent;
+}
+
+/* Input fields */
+.inline-form input, .inline-form button {
+    margin: 0 4px;
+    color: rgb(126, 123, 123); /* Make the input text color black */
+    border: 3px solid rgb(153, 194, 179);
+    border-radius:10px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Cabin', sans-serif;
+    height: 45px;
+    color: white;
+}
+
+
+.inline-form button {
+    margin: 0 10px;
+    background-color: rgb(57, 202, 120); /* Make the input text color black */
+    border: 0px;
+    height: 50px;
+    width: 10%;
+    padding: 0px 2px;
+}
+
+
+::placeholder{
+    font-size: 18px;;
+}
+
+#input1 {
+    flex: 1.2; /* Adjust this value according to your needs */
+}
+
+#input2 {
+    flex: 1.2; /* Adjust this value according to your needs */
+}
+
+#input3 {
+    flex: 1; /* Adjust this value according to your needs */
+}
+
+#input4 {
+    flex: 0.9; /* Adjust this value according to your needs */
+}
+
+
+
+/* Select dropdown styles */
+#destination{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    background-color:transparent;
+    border: 2px solid aquamarine;
+    border-radius: 8px;
+    color:rgb(91, 91, 91);
+    font-family: 'Lato', sans-serif;
+    height:55px;
+    width: 240px;
+    padding: 2px 6px;
+}
+
+#destination:focus{
+    outline: firebrick;
+}
+
+
+/* Social links styles */
+#yout {
+    color: aquamarine;
+    margin-right: 5px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+#insta {
+    margin-left: 140px;
+    margin-left: 2px;
+    color: aquamarine;
+    font-size: 20px;
+}
