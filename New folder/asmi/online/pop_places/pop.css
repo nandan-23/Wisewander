@@ -141,7 +141,7 @@ body {
   
     width: 100px;
     z-index: 1;
-    margin=0px;
+    margin:0px;
     width:50%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
@@ -152,8 +152,8 @@ body {
 #part2{
     background-color: transparent;
     width: 100px;
-    z=1;
-    margin=0px;
+    z-index:1;
+    margin:0px;
     width:50%;
     height:100%;
     border-radius: 0px 20px 20px 0px;
@@ -162,13 +162,12 @@ body {
 }
 
 #img1{
-    cover: cover;
     border-radius: 20px 0px 0px 20px;
     z-index: 2;
 }
 
 #img2{
-    cover: fit;
+
     border-radius: 0px 20px 20px 0px;
 }   
 
@@ -337,3 +336,4 @@ body {
         transform: rotate(0);
     }
 }
+

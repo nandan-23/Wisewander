@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap');
+
+
+
+/* Global styles */
+body {
+    background-color: rgb(24, 23, 24);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 10px;;
+}
+
+/* Menu styles */
+/* Menu styles */
+/* Menu styles */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.641);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 2px 5px;
+    position: relative;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%; /* Set the left position to 50% to start from the middle */
+    transform: translateX(-50%); /* Move the line back by half of its width to start from the origin */
+    width: 0; /* Set the initial width to 0 */
+    height: 2px;
+    background-color: aquamarine;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease; /* Add a transition for both width and opacity */
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+.menu a:hover:before {
+    width: 100%; /* Set the width to 100% on hover to stretch outwards */
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: aquamarine; /* Change the text color on hover */
+}
+
+
+.logo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 21px;
+    margin-left: 10px;;
+}
+
+/* Social links styles */
+#yout {
+    color: aquamarine;
+    margin-right: 5px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+
+#insta {
+    margin-left: 140px;
+    margin-left: 2px;
+    color: aquamarine;
+    font-size: 20px;
+}
+
+
+
+
+/* Existing styles */
+
+/* Contact Us section styles */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-section h1 {
+    font-size: 2em;
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: background-color 0.3s ease;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contact-section form input:focus,
+.contact-section form textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 130px;
+    font-family: 'Fira Sans', sans-serif';
+}
+
+.contact-section form button:hover {
+    background-color:rgb(3, 160, 108);
+}
+
+#head{
+    font-size:70px;
+}
+#ar{
+    height:200px;
+}

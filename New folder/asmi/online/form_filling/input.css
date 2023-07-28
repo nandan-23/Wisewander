@@ -112,7 +112,14 @@ body {
     height:100%;
     object-fit: cover;
     border-radius: 15px;
+    opacity: 1;
+    transition: opacity 1s;
 }
+
+#destinationImage.fadeOut{
+    opacity:0;
+}
+
 
 /* Inline form styles */
 /* Inline form styles */
@@ -143,7 +150,7 @@ body {
 /* Input fields */
 .inline-form input, .inline-form button {
     margin: 0 4px;
-    color: rgb(126, 123, 123); /* Make the input text color black */
+    color: rgb(196, 196, 196); /* Make the input text color black */
     border: 3px solid rgb(153, 194, 179);
     border-radius:10px;
     background-color: transparent;
@@ -192,15 +199,16 @@ body {
 #destination{
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 14px;
     background-color:transparent;
     border: 2px solid aquamarine;
     border-radius: 8px;
-    color:rgb(91, 91, 91);
+    color:rgb(120, 120, 120);
     font-family: 'Lato', sans-serif;
     height:55px;
     width: 240px;
     padding: 2px 6px;
+    font-weight: 400;
 }
 
 #destination:focus{
@@ -222,3 +230,49 @@ body {
     color: aquamarine;
     font-size: 20px;
 }
+
+.inline-form {
+    perspective: 1000px;
+}
+
+.flipper {
+    transition: 0.7s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* Hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateX(0deg);
+    transform-origin: bottom;
+    
+}
+
+#magic{
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+}
+
+
+/* Back, initially hidden pane */
+.back {
+    transform: rotateX(-180deg);
+    transform-origin: bottom;
+}
+
+.inline-form:hover .flipper {
+    transform: rotateX(180deg);
+}
+
+
