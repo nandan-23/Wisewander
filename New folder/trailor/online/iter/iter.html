@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="iter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Trailor</div>
+        <div class="menu">
+            <a href="/form_filling/input.html">Home</a>
+            <a href="/pop_places/pop.html">Popular Places</a>
+            <a href="/contact/contact.html" class="active">Contact Us</a>
+            <a id="insta" href="https://instagram.com/nandan.23?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
+            <a id="yout" href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </nav>
+
+    <div class="center-container">
+        <div id="imagediv">
+            <h3 id="dayindex"> Day 1</h3>
+            <img id="mainImage" src="planet5.jpg" style="width:100%; height:100%;">
+            <h3 id="location"><i class="fas fa-location-arrow"></i> Moon</h3>
+        </div>
+    </div>
+    
+
+    <div id="days">
+        <!-- card elements here -->
+        <div class="card" onclick="changeImage('place1.jpg', this)" data-day="1">
+            <img src="place1.jpg" alt="Image 1" data-day="1">
+            <h2>Card 1</h2>
+            <p>Some text for the card...</p>
+        </div>
+
+        <div class="card" onclick="changeImage('place2.jpg', this)" data-day="2">
+            <img src="place2.jpg" alt="Image 1" data-day="2">
+            <h2>Card 1</h2>
+            <p>Some text for the card...</p>
+        </div>
+
+        <div class="card" onclick="changeImage('place3.jpg', this)" data-day="3">
+            <img src="place3.jpg" alt="Image 1" data-day="3">
+            <h2>Card 1</h2>
+            <p>Some text for the card...</p>
+        </div>
+
+        <div class="card" onclick="changeImage('place4.jpg', this)" data-day="4">
+            <img src="place4.jpg" alt="Image 1" data-day="4">
+            <h2>Card 1</h2>
+            <p>Some text for the card...</p>
+        </div>
+
+
+    </div>
+</body>
+<script src="iter.js"></script>
+</html>
