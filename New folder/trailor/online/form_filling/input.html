@@ -11,39 +11,20 @@
     <nav class="navbar">
         <div class="logo">Trailor</div>
         <div class="menu">
-            <a href="/form_filling/input.html"">Home</a>
+            <a href="/form_filling/input.html">Home</a>
             <a href="/pop_places/pop.html">Popular Places</a>
             <a href="/contact/contact.html">Contact Us</a>
             <a id="insta" href="https://instagram.com/nandan.23?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
             <a id="yout" href="#"><i class="fa fa-youtube"></i></a>
         </div>
     </nav>
-    
 
     <div class="container">
         <div class="header-select">
             <h1 id="main">Your next travel <br>Destination is</h1>
-            
-            <select id="destination" onchange="changeImage()" placeholder="Choose your destination">
-                <option value="placeholder.jpg">Thailand</option>
-                <option value="image1.jpg">Great Wall of China, China</option>
-                <option value="image2.jpg">Eiffel Tower, France</option>
-                <option value="image3.jpg">Pyramids of Giza, Egypt</option>
-                <option value="image4.jpg">Grand Canyon, USA</option>
-                <option value="image5.jpg">Colosseum, Italy</option>
-                <option value="image6.jpg">Machu Picchu, Peru</option>
-                <option value="image7.jpg">Sydney Opera House, Australia</option>
-                <option value="image8.jpg">Statue of Liberty, USA</option>
-                <option value="image9.jpg">Taj Mahal, India</option>
-                <option value="image10.jpg">The Acropolis, Greece</option>
-                <option value="image11.jpg">Petra, Jordan</option>
-                <option value="image12.jpg">Stonehenge, UK</option>
-                <option value="image13.jpg">Christ the Redeemer, Brazil</option>
-                <option value="image14.jpg">Angkor Wat, Cambodia</option>
-                <option value="image15.jpg">Sagrada Familia, Spain</option>
-                <!-- The rest of your destinations here... -->
-            </select>
-            
+
+            <input id="destination" type="text" onchange="changeImage()" placeholder="Type your destination">
+
         </div>
 
         <div id="image-form-container">
@@ -57,21 +38,20 @@
                 </div>
                 <div class="back">
                     <form id="inputForm">
+                        <input id="input0" type="text" placeholder="Departure From">
                         <input id="input1" type="text" placeholder="Budget">
-                        <input type="date" id="date" name="date" placeholder="Date"> 
+                        <input type="date" id="date" name="date" placeholder="Date">
                         <input id="input3" type="text" placeholder="Vibe">
-                        <input id="input4" type="number" placeholder="Number of people">
+                        <input id="input4" type="number" placeholder="Number of days">
                         <button  id="btn1" type="submit">Generate</button>
                     </form>
                 </div>
             </div>
         </div>
-        
-        
+        <div id="json-output" style="margin-top:20px; background-color:#181718; color:whitesmoke; padding:10px; width:70%; border-radius:10px; overflow-wrap:break-word;"></div>
 
-
-        </div>
     </div>
+
 </body>
 <script src="input.js"></script>
 </html>
