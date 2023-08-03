@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"); 
+@import url('/Crete_Round/CreteRound-Regular.ttf');
+
+body {
+    background-color: rgba(0, 0, 0, 0.997);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.menu a {
+    color: rgb(123, 232, 191);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 2px 5px;
+    position: relative;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: aquamarine;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.menu a:first-child {
+    margin-left: 0;
+}
+
+.menu a:hover:before {
+    width: 100%;
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: aquamarine;
+}
+
+.logo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 21px;
+    margin-left: 10px;
+    color:rgb(255, 255, 255);
+}
+
+#yout, #insta {
+    color: rgb(123, 232, 191);
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: transparent;
+}
+
+#sections{
+    font-size: 45px;
+    margin: 50px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgb(198, 202, 201);
+    list-style: none;
+}
+
+#index{
+    color:rgb(179, 179, 179);
+    text-decoration: none;
+}
+  
+.main-content {
+    width: 80%;
+    background-color: transparent;
+    margin-top: 20px;
+    margin: 0 5px;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+
+}
+  
+.section {
+    padding: 20px;
+}
+  
+.card {
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 25px;
+    padding: 0px;
+    width:95%;
+    height:600px;
+    border-radius: 15px;
+    overflow: hidden;
+    border:2px solid rgb(163, 163, 163);
+}
+
+
+#Overview {
+    display: flex;
+  }
+
+  /* Set the leftoverview to take 40% width */
+  #leftoverview {
+    flex: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.644);
+  }
+
+  /* Set the rightoverview to take the remaining space */
+  #rightoverview {
+    flex: 55%;
+    position: relative;
+  }
+
+  /* Ensure the image overimg fills the rightoverview without stretching */
+  #overimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #loc {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 60px;
+    color:white;
+    font-family: 'Robot', sans-serif;
+  }
+
+
+#heading{
+    font-size: 60px;
+    margin: 10px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(162, 253, 223, 0.822);
+    align-items: center;
+    text-align: center;
+    margin-top: 20px ;
+
+}
+
+#Travel{
+    font-size: 25px;
+    margin: 1px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(127, 255, 212, 0.716);
+    font-weight: 50;
+    margin-top: 25px;
+    margin-left: 16%;
+}
+
+
+#date{
+    font-size: 15px;
+    margin: 1px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(255, 255, 255, 0.718);
+    font-weight: 50;
+    margin-top: 10px;
+    margin-left: 16%;
+
+}
+
+#cost{
+    font-size: 18px;
+    margin: 1px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(255, 255, 255, 0.718);
+    font-weight: 50;
+    margin-top: 20px;
+    margin-left: 16%;
+}
+
+#start{
+    font-size: 18px;
+    margin: 1px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(255, 255, 255, 0.718);
+    font-weight: 50;
+    margin-top: 60px;
+    margin-left: 16%;
+}
+
+#Num{
+    font-size: 18px;
+    margin: 1px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(255, 255, 255, 0.718);
+    font-weight: 50;
+    margin-top: 20px;
+    margin-left: 16%;
+}
+
+#Vibe{
+    font-size: 18px;
+    margin: 1px 15px;
+    font-family: 'Cabin', cursive;
+    color: rgba(255, 255, 255, 0.718);
+    font-weight: 50;
+    margin-top: 20px;
+    margin-left: 16%;
+}
+
+
+#Day {
+    display: flex;
+  }
+
+#leftday{
+    flex: 35%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.644);
+}
+
+#rightday{
+    flex: 65%;
+    position: relative; 
+    background-color: royalblue;
+}
+
+#morning{
+    height:33%;
+    background-color: rgb(210, 11, 11);
+    width:100%;
+}
+
+#afternoon{
+    height:33%;
+    background-color: rgb(210, 11, 11);
+    width:100%;
+}
+
+#evening{
+    height:33%;
+    background-color: rgb(210, 11, 11);
+    width:100%;
+}
