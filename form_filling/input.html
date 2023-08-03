@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Next Travel Destination</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Trailor</div>
+        <div class="menu">
+            <a href="/form_filling/input.html">Home</a>
+            <a href="/pop_places/pop.html">Popular Places</a>
+            <a href="/contact/contact.html">Contact Us</a>
+            <a id="insta" href="https://instagram.com/nandan.23?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa fa-instagram"></i></a>
+            <a id="yout" href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-select">
+            <h1 id="main">Your next travel <br>Destination is</h1>
+
+            <input id="destination" type="text" onchange="changeImage()" placeholder="Type your destination">
+
+        </div>
+
+        <div id="image-form-container">
+            <img id="destinationImage" src="baikal.jpg">
+        </div>
+
+        <div class="inline-form">
+            <div class="flipper">
+                <div class="front">
+                    <p id="magic">Hover here! and enter the details</p>
+                </div>
+                <div class="back">
+                    <form id="inputForm">
+                        <input id="input0" type="text" placeholder="Departure From">
+                        <input id="input1" type="text" placeholder="Budget">
+                        <input type="date" id="date" name="date" placeholder="Date">
+                        <input id="input3" type="text" placeholder="Vibe">
+                        <input id="input4" type="number" placeholder="Number of days">
+                        <button  id="btn1" type="submit">Generate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="json-output" style="margin-top:20px; background-color:#181718; color:whitesmoke; padding:10px; width:70%; border-radius:10px; overflow-wrap:break-word;"></div>
+
+    </div>
+
+</body>
+<script src="input.js"></script>
+</html>
