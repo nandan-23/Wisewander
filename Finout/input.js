@@ -41,23 +41,19 @@ document.getElementById('destination').addEventListener('change', function(){
     .catch(error => console.log(error));
 });
 
-
-document.getElementById('btn1').addEventListener('click', function(e) {
+document.getElementById('inputForm').addEventListener('submit', function(e) {
     e.preventDefault();
   
-    let changingText = document.getElementById('changingText');
-    changingText.style.animation = "fadeout 5s";
+    // Here you can process the form data
+    var formData = new FormData(this);
     
-    // Assuming this is where you get the response
-    new Promise((resolve) => {
-      setTimeout(() => {
-        changingText.textContent = "Let's Travel";
-        resolve();
-      }, 1000);
-    }).then(() => {
-      changingText.style.animation = "none";
-      changingText.getBoundingClientRect(); // Triggers reflow
-      changingText.style.animation = "fadein 2s";
+    // Then perform your operations
+    document.getElementById('hiddenContent').style.display = "flex";
+    document.body.style.overflow = "auto";
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    
+    setTimeout(function() {
+      document.getElementById('changingText').textContent = "Let's Travel";
       
       // Show the card with the response
       let responseCard = document.getElementById('responseCard');
@@ -65,11 +61,6 @@ document.getElementById('btn1').addEventListener('click', function(e) {
       
       // Add content to the card
       document.getElementById('responseText').textContent = "This is the response";
-  
-      // Show the div and scroll to it
-      document.getElementById('hiddenContent').style.display = "flex";
-      document.body.style.overflow = "auto";
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    });
+    }, 1000);
   });
   
