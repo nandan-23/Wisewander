@@ -243,33 +243,13 @@ body {
     display: none;
 }
 
-#helloWorld {
-    text-align: center;
-    font-size: 72px;
-    margin-top: 50px;
-    color: white;
-}
 
-#hiddenDiv {
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(24, 23, 24);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 4em;
-    transition: opacity 3s ease-in-out;
-}
 
-#hiddenDiv.fadeOut {
-    opacity: 0;
-}
-
-#hiddenContent {
+body {
+    overflow: hidden;
+  }
+  
+  #hiddenContent {
     display: none;
     width: 100%;
     height: 100vh;
@@ -277,23 +257,21 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-#changingText {
+  }
+  
+  #changingText {
     font-size: 5em;
     animation: fadeText 1s linear;
-}
-
-@keyframes fadeout {
+  }
+  
+  @keyframes fadeout {
     from { opacity: 1; }
     to { opacity: 0; }
-}
-
-@keyframes fadein {
+  }
+  @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-
+  }
+  
 
 
